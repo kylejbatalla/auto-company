@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — COMPANY XYZ</title>
+  <meta name="description" content="Comprehensive auto repair and tire services. Mounting, brakes, alignment, diagnostics, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/services.css" />
+</head>
+<body>
+
+  <!-- ============= NAVBAR ============= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">
+          <strong>COMPANY XYZ</strong>
+          <span>Auto & Tire</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============= PAGE HEADER ============= -->
+  <header class="page-header">
+    <div class="speed-lines">
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        Services
+      </div>
+      <h1 class="page-title">Full-Service <span style="color: var(--red); font-style: italic;">Garage</span></h1>
+      <p class="page-subtitle">
+        Tires to transmissions, oil changes to overhauls. We handle the whole car
+        — and we handle it fast.
+      </p>
+    </div>
+  </header>
+
+  <!-- ============= SERVICE DETAILS ============= -->
+  <section style="background: var(--black);">
+    <div class="container">
+
+      <!-- TIRES -->
+      <div class="service-detail reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <circle cx="24" cy="24" r="20"/>
+              <circle cx="24" cy="24" r="8"/>
+              <line x1="24" y1="4" x2="24" y2="16"/>
+              <line x1="24" y1="32" x2="24" y2="44"/>
+              <line x1="4" y1="24" x2="16" y2="24"/>
+              <line x1="32" y1="24" x2="44" y2="24"/>
+            </svg>
+          </div>
+          <h3>Tire <span class="accent">Service</span></h3>
+          <p>
+            We stock and install every major brand: Michelin, Bridgestone, Goodyear, Pirelli,
+            Continental, Yokohama, BFGoodrich, and more. Free balancing with every set of 4.
+          </p>
+          <ul class="service-features">
+            <li>Road-force balancing for vibration-free rides</li>
+            <li>Free tire rotations for the life of your tires</li>
+            <li>TPMS reset and sensor service included</li>
+            <li>Flat repair and patching while you wait</li>
+            <li>Seasonal storage for your winter/summer sets</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill"><strong>$25</strong>Mount & Balance</span>
+            <span class="price-pill"><strong>$15</strong>Rotation</span>
+            <span class="price-pill"><strong>$30</strong>Flat Repair</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rim1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#E8E8E8"/>
+                <stop offset="100%" stop-color="#7A7A7A"/>
+              </radialGradient>
+            </defs>
+            <g style="transform-origin: 150px 150px; animation: tire-spin 6s linear infinite;">
+              <circle cx="150" cy="150" r="140" fill="#0F0F0F" stroke="#333" stroke-width="2"/>
+              <circle cx="150" cy="150" r="130" fill="none" stroke="#444" stroke-width="2" stroke-dasharray="10 8"/>
+              <circle cx="150" cy="150" r="120" fill="none" stroke="#555" stroke-width="2" stroke-dasharray="16 6"/>
+              <circle cx="150" cy="150" r="100" fill="url(#rim1)"/>
+              <g fill="url(#rim1)" stroke="#666">
+                <path d="M 150 60 L 165 140 L 135 140 Z"/>
+                <path d="M 150 60 L 165 140 L 135 140 Z" transform="rotate(72 150 150)"/>
+                <path d="M 150 60 L 165 140 L 135 140 Z" transform="rotate(144 150 150)"/>
+                <path d="M 150 60 L 165 140 L 135 140 Z" transform="rotate(216 150 150)"/>
+                <path d="M 150 60 L 165 140 L 135 140 Z" transform="rotate(288 150 150)"/>
+              </g>
+              <circle cx="150" cy="150" r="60" fill="none" stroke="#E10600" stroke-width="4" stroke-dasharray="30 95" stroke-dashoffset="30"/>
+              <circle cx="150" cy="150" r="40" fill="#1A1A1A"/>
+              <circle cx="150" cy="150" r="32" fill="#E10600"/>
+              <text x="150" y="160" text-anchor="middle" fill="#FFF" font-family="Orbitron" font-weight="900" font-size="20">A</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="service-detail reverse reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="24" cy="24" r="18"/>
+              <circle cx="24" cy="24" r="6" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Brake <span class="accent">Service</span></h3>
+          <p>
+            Stopping is the most important thing your car does. We use OEM-grade pads and rotors,
+            and our techs deliver consistent, controlled braking lap after lap.
+          </p>
+          <ul class="service-features">
+            <li>Premium ceramic and semi-metallic brake pads</li>
+            <li>Rotor resurfacing or replacement</li>
+            <li>Caliper rebuilds and bleeding</li>
+            <li>Brake fluid flush every 30k miles</li>
+            <li>Parking brake adjustment included</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill">Full Brake Pad Replace</span>
+            <span class="price-pill">Fluid Flush</span>
+            <span class="price-pill">Inspection</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="brakeDisc" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#888"/>
+                <stop offset="100%" stop-color="#333"/>
+              </radialGradient>
+            </defs>
+            <!-- disc -->
+            <circle cx="150" cy="150" r="120" fill="url(#brakeDisc)" stroke="#222" stroke-width="2"/>
+            <!-- vent slots -->
+            <g stroke="#1A1A1A" stroke-width="3" fill="none" style="animation: tire-spin 12s linear infinite; transform-origin: 150px 150px;">
+              <circle cx="150" cy="150" r="100" stroke-dasharray="20 30"/>
+              <circle cx="150" cy="150" r="80" stroke-dasharray="14 20"/>
+              <circle cx="150" cy="150" r="60" stroke-dasharray="10 14"/>
+            </g>
+            <!-- center -->
+            <circle cx="150" cy="150" r="35" fill="#1A1A1A"/>
+            <circle cx="150" cy="150" r="6" fill="#444"/>
+            <!-- caliper (red) -->
+            <path d="M 50 110 Q 30 110 30 130 L 30 170 Q 30 190 50 190 L 80 190 Q 95 170 95 150 Q 95 130 80 110 Z" fill="#E10600" stroke="#990000" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- OIL & FLUIDS -->
+      <div class="service-detail reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 8h20l-2 8h-16z"/>
+              <path d="M16 16v24a4 4 0 004 4h8a4 4 0 004-4V16"/>
+            </svg>
+          </div>
+          <h3>Oil & <span class="accent">Fluids</span></h3>
+          <p>
+            Conventional, synthetic blend, full synthetic, high-mileage. We use the spec
+            your manufacturer recommends — no upselling, no shortcuts.
+          </p>
+          <ul class="service-features">
+            <li>Full synthetic oil with 15-point inspection</li>
+            <li>OEM-spec filters every change</li>
+            <li>Coolant flush and refill</li>
+            <li>Transmission fluid service</li>
+            <li>Differential and transfer case fluids</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill">Conventional</span>
+            <span class="price-pill">Full Synthetic</span>
+            <span class="price-pill">Coolant Flush</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="oilCan" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#E10600"/>
+                <stop offset="100%" stop-color="#7A0300"/>
+              </linearGradient>
+              <linearGradient id="oilDrop" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#FFD700"/>
+                <stop offset="100%" stop-color="#8B6F00"/>
+              </linearGradient>
+            </defs>
+            <!-- Can body -->
+            <rect x="80" y="100" width="140" height="160" rx="8" fill="url(#oilCan)" stroke="#990000" stroke-width="2"/>
+            <!-- Can top -->
+            <rect x="120" y="70" width="50" height="35" fill="#444" stroke="#222"/>
+            <rect x="125" y="60" width="40" height="15" fill="#666" stroke="#222"/>
+            <!-- Label -->
+            <rect x="90" y="130" width="120" height="100" fill="#FFF" stroke="#990000"/>
+            <text x="150" y="165" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="18" fill="#E10600">OIL</text>
+            <text x="150" y="185" text-anchor="middle" font-family="Rajdhani" font-weight="700" font-size="13" fill="#0A0A0A">RACING</text>
+            <text x="150" y="202" text-anchor="middle" font-family="Rajdhani" font-weight="600" font-size="11" fill="#0A0A0A">FULL SYNTHETIC</text>
+            <text x="150" y="220" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="14" fill="#E10600">5W-30</text>
+
+            <!-- Oil drops dripping -->
+            <g style="animation: tire-spin 0s; transform-origin: 0 0;">
+              <path d="M 250 110 Q 245 130 250 140 Q 255 130 250 110 Z" fill="url(#oilDrop)">
+                <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 30; 0 60" dur="2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M 220 90 Q 215 110 220 120 Q 225 110 220 90 Z" fill="url(#oilDrop)" opacity="0.8">
+                <animate attributeName="opacity" values="0;1;0" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 40; 0 80" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+              </path>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ALIGNMENT -->
+      <div class="service-detail reverse reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M8 28h32"/>
+              <path d="M14 22h20"/>
+              <circle cx="16" cy="38" r="4"/>
+              <circle cx="32" cy="38" r="4"/>
+            </svg>
+          </div>
+          <h3>Wheel <span class="accent">Alignment</span></h3>
+          <p>
+            Bad alignment chews tires, kills fuel economy, and makes your car feel sloppy.
+            Our Hunter HawkEye system measures camber, caster, and toe to a thousandth of a degree.
+          </p>
+          <ul class="service-features">
+            <li>Computerized 4-wheel alignment</li>
+            <li>Suspension component inspection</li>
+            <li>Before/after printouts you can keep</li>
+            <li>Free re-check at 6 months</li>
+            <li>Race-spec alignments available</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill">2-Wheel Align</span>
+            <span class="price-pill">4-Wheel Align</span>
+            <span class="price-pill">Race Spec</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- floor grid -->
+            <g stroke="#222" stroke-width="1">
+              <line x1="0" y1="240" x2="300" y2="240"/>
+              <line x1="0" y1="260" x2="300" y2="260"/>
+              <line x1="0" y1="280" x2="300" y2="280"/>
+            </g>
+            <!-- car bottom view -->
+            <g transform="translate(60 80)">
+              <rect x="0" y="20" width="180" height="120" rx="20" fill="#1A1A1A" stroke="#444" stroke-width="2"/>
+              <!-- wheels -->
+              <rect x="-10" y="10" width="30" height="50" rx="3" fill="#0A0A0A" stroke="#666"/>
+              <rect x="160" y="10" width="30" height="50" rx="3" fill="#0A0A0A" stroke="#666"/>
+              <rect x="-10" y="100" width="30" height="50" rx="3" fill="#0A0A0A" stroke="#666"/>
+              <rect x="160" y="100" width="30" height="50" rx="3" fill="#0A0A0A" stroke="#666"/>
+              <!-- alignment lines -->
+              <line x1="5" y1="35" x2="175" y2="35" stroke="#E10600" stroke-width="2" stroke-dasharray="6 4"/>
+              <line x1="5" y1="125" x2="175" y2="125" stroke="#E10600" stroke-width="2" stroke-dasharray="6 4"/>
+              <line x1="90" y1="20" x2="90" y2="140" stroke="#E10600" stroke-width="2" stroke-dasharray="6 4"/>
+              <!-- crosshair -->
+              <circle cx="90" cy="80" r="14" fill="none" stroke="#FFF" stroke-width="2"/>
+              <line x1="76" y1="80" x2="104" y2="80" stroke="#FFF" stroke-width="1.5"/>
+              <line x1="90" y1="66" x2="90" y2="94" stroke="#FFF" stroke-width="1.5"/>
+              <circle cx="90" cy="80" r="3" fill="#E10600"/>
+            </g>
+            <!-- measurement readouts -->
+            <g font-family="Orbitron" fill="#FFF">
+              <text x="20" y="40" font-size="9" fill="#E10600" font-weight="700">CAMBER</text>
+              <text x="20" y="55" font-size="14" font-weight="900">-0.5°</text>
+              <text x="220" y="40" font-size="9" fill="#E10600" font-weight="700">TOE</text>
+              <text x="220" y="55" font-size="14" font-weight="900">+0.08°</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- DIAGNOSTICS -->
+      <div class="service-detail reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="8" y="12" width="32" height="24" rx="3"/>
+              <line x1="14" y1="20" x2="20" y2="20"/>
+              <line x1="14" y1="26" x2="34" y2="26"/>
+              <line x1="14" y1="32" x2="26" y2="32"/>
+            </svg>
+          </div>
+          <h3>Engine <span class="accent">Diagnostics</span></h3>
+          <p>
+            Check engine light on? Weird noise? Loss of power? Our shop runs the same diagnostic
+            tools dealerships use — without the dealership prices.
+          </p>
+          <ul class="service-features">
+            <li>OBD-II and manufacturer-specific scans</li>
+            <li>Live data analysis and freeze-frame capture</li>
+            <li>Misfire, fuel trim, and emissions diagnosis</li>
+            <li>Electrical and wiring troubleshooting</li>
+            <li>Free diagnostics with any related repair</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill">Diagnostic Scan</span>
+            <span class="price-pill">w/ Repair</span>
+            <span class="price-pill">Deep Diagnose</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Diagnostic tablet -->
+            <rect x="50" y="40" width="200" height="220" rx="14" fill="#1A1A1A" stroke="#444" stroke-width="2"/>
+            <rect x="65" y="60" width="170" height="155" rx="4" fill="#0A0A0A"/>
+            <!-- Screen content -->
+            <text x="80" y="85" font-family="Orbitron" font-size="10" font-weight="700" fill="#E10600">DIAGNOSTIC</text>
+            <line x1="80" y1="90" x2="220" y2="90" stroke="#333"/>
+            <!-- Bars -->
+            <g font-family="Inter" font-size="8" fill="#999">
+              <text x="80" y="110">RPM</text>
+              <rect x="115" y="103" width="100" height="8" fill="#222"/>
+              <rect x="115" y="103" width="75" height="8" fill="#E10600">
+                <animate attributeName="width" values="50;90;75;60;75" dur="3s" repeatCount="indefinite"/>
+              </rect>
+
+              <text x="80" y="130">TEMP</text>
+              <rect x="115" y="123" width="100" height="8" fill="#222"/>
+              <rect x="115" y="123" width="60" height="8" fill="#E10600">
+                <animate attributeName="width" values="40;65;60;55;60" dur="4s" repeatCount="indefinite"/>
+              </rect>
+
+              <text x="80" y="150">FUEL</text>
+              <rect x="115" y="143" width="100" height="8" fill="#222"/>
+              <rect x="115" y="143" width="85" height="8" fill="#E10600">
+                <animate attributeName="width" values="70;90;85" dur="5s" repeatCount="indefinite"/>
+              </rect>
+            </g>
+            <!-- Big readout -->
+            <text x="150" y="190" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="22" fill="#FFF">P0301</text>
+            <text x="150" y="205" text-anchor="middle" font-family="Rajdhani" font-size="9" fill="#999">CYLINDER 1 MISFIRE</text>
+            <!-- buttons -->
+            <circle cx="100" cy="240" r="8" fill="#E10600"/>
+            <circle cx="150" cy="240" r="8" fill="#333"/>
+            <circle cx="200" cy="240" r="8" fill="#333"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- SUSPENSION -->
+      <div class="service-detail reverse reveal">
+        <div>
+          <div class="service-detail-icon">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M10 30c0-8 6-14 14-14s14 6 14 14"/>
+              <circle cx="18" cy="36" r="4"/>
+              <circle cx="30" cy="36" r="4"/>
+            </svg>
+          </div>
+          <h3>Suspension & <span class="accent">Steering</span></h3>
+          <p>
+            Squeaks, clunks, drift, dive. Whatever's making your car feel old, we'll bring it back
+            to the showroom-floor feel — or better, with performance upgrades.
+          </p>
+          <ul class="service-features">
+            <li>Shocks, struts, and coilover installation</li>
+            <li>Control arms, ball joints, sway bar links</li>
+            <li>Tie rods, rack and pinion, power steering</li>
+            <li>CV joints, axles, drive shaft service</li>
+            <li>Performance suspension upgrades</li>
+          </ul>
+          <div class="price-row">
+            <span class="price-pill">>Strut Replace</span>
+            <span class="price-pill">Tie Rod</span>
+            <span class="price-pill">Sway Bar</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+        </div>
+        <div class="service-img">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Strut/coilover -->
+            <g transform="translate(150 50)">
+              <!-- top mount -->
+              <rect x="-30" y="0" width="60" height="20" rx="3" fill="#888" stroke="#444"/>
+              <!-- shaft -->
+              <rect x="-4" y="20" width="8" height="40" fill="#CCC" stroke="#888"/>
+              <!-- spring coils -->
+              <g stroke="#E10600" stroke-width="6" fill="none">
+                <ellipse cx="0" cy="80" rx="30" ry="6"/>
+                <ellipse cx="0" cy="100" rx="30" ry="6"/>
+                <ellipse cx="0" cy="120" rx="30" ry="6"/>
+                <ellipse cx="0" cy="140" rx="30" ry="6"/>
+                <ellipse cx="0" cy="160" rx="30" ry="6"/>
+                <ellipse cx="0" cy="180" rx="30" ry="6"/>
+              </g>
+              <!-- damper body -->
+              <rect x="-12" y="190" width="24" height="50" rx="2" fill="#444" stroke="#222"/>
+              <!-- bottom mount -->
+              <rect x="-20" y="240" width="40" height="14" rx="3" fill="#888" stroke="#444"/>
+              <!-- bouncing animation -->
+              <animateTransform attributeName="transform" type="translate" values="150 50; 150 58; 150 50" dur="1.5s" repeatCount="indefinite"/>
+            </g>
+            <!-- ground -->
+            <line x1="80" y1="290" x2="220" y2="290" stroke="#444" stroke-width="2"/>
+            <g stroke="#222" stroke-width="1">
+              <line x1="80" y1="290" x2="60" y2="298"/>
+              <line x1="100" y1="290" x2="80" y2="298"/>
+              <line x1="120" y1="290" x2="100" y2="298"/>
+              <line x1="140" y1="290" x2="120" y2="298"/>
+              <line x1="160" y1="290" x2="140" y2="298"/>
+              <line x1="180" y1="290" x2="160" y2="298"/>
+              <line x1="200" y1="290" x2="180" y2="298"/>
+              <line x1="220" y1="290" x2="200" y2="298"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============= CTA ============= -->
+  <section class="cta-banner">
+    <div class="speed-lines">
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+    </div>
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div class="reveal reveal-left">
+          <h2>Need something <span class="accent">not on this list?</span></h2>
+        </div>
+        <div class="cta-banner-actions reveal reveal-right">
+          <a href="contact.html" class="btn btn-primary">
+            Get in Touch <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            <span class="logo-text">
+              <strong>COMPANY XYZ</strong>
+              <span>Auto & Tire</span>
+            </span>
+          </a>
+          <p>Family-owned since 9999.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Tires</a></li>
+            <li><a href="services.html">Brakes</a></li>
+            <li><a href="services.html">Oil Change</a></li>
+            <li><a href="services.html">Alignment</a></li>
+            <li><a href="services.html">Diagnostics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <ul>
+            <li>1500 Speedway Blvd</li>
+            <li>Salinas, CA 93901</li>
+            <li><a href="tel:7045550100">(999)999-9999</a></li>
+            <li>Mon-Fri 7a-7p</li>
+            <li>Sat 8a-4p</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 COMPANY XYZ — ALL RIGHTS RESERVED — BUILT FOR SPEED
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

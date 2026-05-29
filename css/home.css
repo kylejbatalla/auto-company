@@ -1,0 +1,384 @@
+/* ============================================
+   HOME PAGE - Hero, Feature Strip, Services Preview
+   ============================================ */
+
+/* --- HERO --- */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 100px 0 60px;
+  background: radial-gradient(ellipse at 30% 50%, rgba(225, 6, 0, 0.15), transparent 60%),
+              radial-gradient(ellipse at 80% 20%, rgba(225, 6, 0, 0.08), transparent 50%),
+              var(--black);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 18px;
+  background: rgba(225, 6, 0, 0.1);
+  border: 1px solid var(--red);
+  border-radius: 100px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 0.2s;
+}
+
+.hero-eyebrow .dot {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.95;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 0.4s;
+}
+
+.hero-title .red-text {
+  color: var(--red);
+  position: relative;
+  display: inline-block;
+  font-style: italic;
+}
+
+.hero-title .red-text::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  top: 50%;
+  height: 6px;
+  background: var(--red);
+  opacity: 0.15;
+  z-index: -1;
+  transform: skewY(-3deg);
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: var(--gray-light);
+  max-width: 540px;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 0.6s;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 0.8s;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 1s;
+}
+
+.hero-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 36px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.hero-stat span {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  margin-top: 4px;
+  display: block;
+}
+
+/* --- Hero visual: animated tire + speedometer --- */
+.hero-visual {
+  position: relative;
+  height: 560px;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  animation: fade-in 1.2s var(--ease-race) forwards 0.6s;
+}
+
+.tire-stage {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  max-width: 100%;
+}
+
+.tire-glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(circle, var(--red-glow), transparent 60%);
+  filter: blur(40px);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.tire {
+  width: 100%;
+  height: 100%;
+  animation: tire-spin 8s linear infinite;
+  position: relative;
+}
+
+.tire svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+}
+
+.speedo-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 180px;
+  height: 180px;
+  background: var(--white);
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  display: grid;
+  place-items: center;
+  z-index: 3;
+  border: 4px solid var(--red);
+}
+
+.speedo-badge svg { width: 100%; height: 100%; }
+
+/* --- FEATURE STRIP --- */
+.feature-strip {
+  background: var(--red);
+  color: var(--white);
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--white);
+  border-bottom: 4px solid var(--white);
+}
+
+.feature-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0 30px,
+    rgba(0,0,0,0.05) 30px 60px
+  );
+}
+
+.feature-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--white);
+  color: var(--red);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.feature-item strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.feature-item span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* --- SERVICES GRID (home preview) --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--dark);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s var(--ease-race);
+  cursor: pointer;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--red);
+  transition: width 0.5s var(--ease-race);
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(225, 6, 0, 0.08), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--red);
+  box-shadow: var(--shadow-red);
+}
+
+.service-card:hover::before { width: 100%; }
+.service-card:hover::after { opacity: 1; }
+
+.service-num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: var(--red);
+  margin-bottom: 24px;
+}
+
+.service-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  background: rgba(225, 6, 0, 0.1);
+  border: 1px solid rgba(225, 6, 0, 0.3);
+  border-radius: 12px;
+  color: var(--red);
+  margin-bottom: 24px;
+  transition: all 0.4s var(--ease-race);
+}
+
+.service-card:hover .service-icon {
+  background: var(--red);
+  color: var(--white);
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--gray-light);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-link {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.service-card:hover .service-link .arrow {
+  transform: translateX(6px);
+}
+
+.service-link .arrow {
+  transition: transform 0.3s var(--ease-race);
+}
+
+/* --- HOME PAGE RESPONSIVE --- */
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { height: 360px; }
+  .tire-stage { width: 320px; height: 320px; }
+  .speedo-badge { width: 120px; height: 120px; }
+  .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .feature-strip-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: clamp(40px, 11vw, 64px); }
+}
+
+@media (max-width: 600px) {
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+  .feature-strip-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 20px; }
+  .hero-stat strong { font-size: 28px; }
+}

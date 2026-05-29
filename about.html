@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — COMPANY XYZ</title>
+  <meta name="description" content="Family-owned auto shop with motorsports DNA. Meet the team behind COMPANY XYZ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark"></span>
+        <span class="logo-text">
+          <strong>COMPANY XYZ</strong>
+          <span>Auto & Tire</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="speed-lines">
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        About
+      </div>
+      <h1 class="page-title">Built On <span style="color: var(--red); font-style: italic;">Speed.</span></h1>
+      <p class="page-subtitle">
+        A family-owned shop with motorsports DNA — running since 1998.
+      </p>
+    </div>
+  </header>
+
+  <!-- OUR STORY -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal reveal-left">
+          <span class="section-tag" style="margin-bottom: 16px;">Our Story</span>
+          <h2>Family<br/><span class="accent">owned</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+            In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+            Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+            Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+            In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+            Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+            Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 24px;">
+            Come Visit <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="reveal reveal-right" style="position: relative; height: 480px;">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+            <defs>
+              <linearGradient id="trophy" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#FFD700"/>
+                <stop offset="100%" stop-color="#A07300"/>
+              </linearGradient>
+              <radialGradient id="sun">
+                <stop offset="0%" stop-color="#E10600" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#E10600" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Background glow -->
+            <circle cx="250" cy="250" r="200" fill="url(#sun)"/>
+
+            <!-- Checkered flag pole -->
+            <line x1="100" y1="80" x2="100" y2="400" stroke="#888" stroke-width="4"/>
+            <!-- Flag waving -->
+            <g>
+              <path d="M 100 80 Q 200 60 280 90 Q 250 130 290 170 Q 200 150 100 170 Z" fill="#FFF"/>
+              <!-- Checker pattern -->
+              <g fill="#0A0A0A">
+                <rect x="105" y="85" width="20" height="18"/>
+                <rect x="145" y="85" width="20" height="18"/>
+                <rect x="185" y="85" width="20" height="18"/>
+                <rect x="225" y="85" width="20" height="18"/>
+                <rect x="125" y="103" width="20" height="18"/>
+                <rect x="165" y="103" width="20" height="18"/>
+                <rect x="205" y="103" width="20" height="18"/>
+                <rect x="245" y="103" width="20" height="18"/>
+                <rect x="105" y="121" width="20" height="18"/>
+                <rect x="145" y="121" width="20" height="18"/>
+                <rect x="185" y="121" width="20" height="18"/>
+                <rect x="225" y="121" width="20" height="18"/>
+                <rect x="125" y="139" width="20" height="18"/>
+                <rect x="165" y="139" width="20" height="18"/>
+                <rect x="205" y="139" width="20" height="18"/>
+                <rect x="245" y="139" width="20" height="18"/>
+              </g>
+              <animateTransform attributeName="transform" type="translate" values="0 0; 6 -2; 0 0; -3 2; 0 0" dur="4s" repeatCount="indefinite"/>
+            </g>
+
+            <!-- Trophy -->
+            <g transform="translate(330 220)">
+              <path d="M -50 0 L 50 0 L 40 80 Q 35 100 0 105 Q -35 100 -40 80 Z" fill="url(#trophy)" stroke="#7A5800" stroke-width="2"/>
+              <ellipse cx="0" cy="0" rx="50" ry="10" fill="#FFD700" stroke="#7A5800" stroke-width="2"/>
+              <path d="M -50 10 Q -85 30 -85 60 Q -85 70 -65 75" fill="none" stroke="url(#trophy)" stroke-width="5"/>
+              <path d="M 50 10 Q 85 30 85 60 Q 85 70 65 75" fill="none" stroke="url(#trophy)" stroke-width="5"/>
+              <!-- base -->
+              <rect x="-20" y="105" width="40" height="14" fill="#7A5800"/>
+              <rect x="-40" y="119" width="80" height="20" fill="#1A1A1A"/>
+              <text x="0" y="133" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="11" fill="#E10600">COMPANY XYZ #1</text>
+              <!-- Star -->
+              <path d="M 0 -65 L 6 -50 L 22 -48 L 10 -38 L 14 -22 L 0 -30 L -14 -22 L -10 -38 L -22 -48 L -6 -50 Z" fill="#E10600"/>
+            </g>
+
+            <!-- decorative dots -->
+            <g fill="#E10600">
+              <circle cx="60" cy="430" r="4">
+                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="80" cy="450" r="3">
+                <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="430" cy="440" r="5">
+                <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="450" cy="460" r="3">
+                <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-box reveal">
+          <div class="stat-num" data-count="27">0</div>
+          <div class="stat-label">Years Open</div>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-num" data-count="42">0</div>
+          <div class="stat-label">Thousand Cars</div>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-num" data-count="12">0</div>
+          <div class="stat-label">Service Bays</div>
+        </div>
+        <div class="stat-box reveal">
+          <div class="stat-num" data-count="5">0</div>
+          <div class="stat-label">Best of Awards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section checker-bg" style="background-color: var(--dark-2);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The Journey</span>
+        <h2 class="section-title">Down the <span class="accent">Track</span></h2>
+        <p class="section-subtitle">Where we've been, what we've done.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h4>Event 1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+          <div class="timeline-year">1998</div>
+          <div></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div></div>
+          <div class="timeline-year">2005</div>
+          <div class="timeline-content">
+            <h4>Event 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h4>Event 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+          <div class="timeline-year">2012</div>
+          <div></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div></div>
+          <div class="timeline-year">2018</div>
+          <div class="timeline-content">
+            <h4>Event 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <h4>Event 5</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+          <div class="timeline-year">2026</div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The Crew</span>
+        <h2 class="section-title">Meet the <span class="accent">Pit Team</span></h2>
+        <p class="section-subtitle">Master techs, certified specialists, and one really good front-desk dog.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+
+        <div class="team-card reveal">
+          <div class="team-avatar">
+            <!-- Stylized portrait silhouette -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="p1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#E10600"/>
+                  <stop offset="100%" stop-color="#7A0300"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="80" r="45" fill="url(#p1)"/>
+              <path d="M 30 200 Q 30 130 100 130 Q 170 130 170 200 Z" fill="url(#p1)"/>
+              <!-- hat -->
+              <path d="M 55 60 Q 100 30 145 60 L 145 70 L 55 70 Z" fill="#0A0A0A"/>
+              <rect x="55" y="65" width="90" height="6" fill="#E10600"/>
+              <text x="100" y="69" text-anchor="middle" font-family="Orbitron" font-weight="900" font-size="6" fill="#FFF">COMPANY XYZ</text>
+            </svg>
+          </div>
+          <div class="team-info">
+            <h4>John Pork</h4>
+            <span class="role">Owner · Master Tech</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="speed-lines">
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+      <div class="speed-line"></div>
+    </div>
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div class="reveal reveal-left">
+          <h2>Want to <span class="accent">see the garage?</span></h2>
+          <p>Drop in any time during business hours. Coffee's on, the dog's friendly.</p>
+        </div>
+        <div class="cta-banner-actions reveal reveal-right">
+          <a href="contact.html" class="btn btn-primary">
+            Get Directions <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            <span class="logo-text">
+              <strong>COMPANY XYZ</strong>
+              <span>Auto & Tire</span>
+            </span>
+          </a>
+          <p>Family-owned since 9999.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Tires</a></li>
+            <li><a href="services.html">Brakes</a></li>
+            <li><a href="services.html">Oil Change</a></li>
+            <li><a href="services.html">Alignment</a></li>
+            <li><a href="services.html">Diagnostics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">The Team</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <ul>
+            <li>1500 Speedway Blvd</li>
+            <li>Salinas, CA 93901</li>
+            <li><a href="tel:7045550100">(999)999-9999</a></li>
+            <li>Mon-Fri 7a-7p</li>
+            <li>Sat 8a-4p</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 COMPANY XYZ — ALL RIGHTS RESERVED — BUILT FOR SPEED
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
