@@ -145,7 +145,7 @@ window.TRANSLATIONS = {
     /* --- ABOUT PAGE --- */
     'about.breadcrumb': 'About',
     'about.pageTitle': 'Built On <span style="color: var(--red); font-style: italic;">Speed.</span>',
-    'about.pageSubtitle': 'A family-owned shop with motorsports DNA — running since 1998.',
+    'about.pageSubtitle': 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     'about.story.tag': 'Our Story',
     'about.story.title': 'Family<br/><span class="accent">owned</span>',
     'about.story.p1': 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.',
@@ -170,7 +170,7 @@ window.TRANSLATIONS = {
     'about.team.role': 'Owner · Master Tech',
     'about.team.bio': 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.',
     'about.cta.title': 'Want to <span class="accent">see the garage?</span>',
-    'about.cta.sub': "Drop in any time during business hours. Coffee's on, the dog's friendly.",
+    'about.cta.sub': "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
     'about.cta.btn': 'Get Directions',
 
     /* --- CONTACT PAGE --- */
@@ -384,7 +384,7 @@ window.TRANSLATIONS = {
     'about.team.role': 'Dueño · Técnico Maestro',
     'about.team.bio': 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.',
     'about.cta.title': '¿Quieres <span class="accent">ver el taller?</span>',
-    'about.cta.sub': 'Pásate cualquier día en horario de atención. Hay café puesto y el perro es muy amigable.',
+    'about.cta.sub': 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
     'about.cta.btn': 'Ver Direcciones',
 
     /* --- CONTACT --- */
