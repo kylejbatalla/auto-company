@@ -20,18 +20,49 @@
         <span class="logo-mark"></span>
         <span class="logo-text">
           <strong>COMPANY XYZ</strong>
-          <span>Auto & Tire</span>
+          <span data-i18n="nav.tagline">Auto & Tire</span>
         </span>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-cluster">
+        <button class="lang-toggle" id="langToggle" data-lang="en" aria-label="Switch to Spanish" title="Switch to Spanish">
+          <span class="flag flag-us" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="60" fill="#B22234"/>
+              <rect y="4.6" width="60" height="4.6" fill="#fff"/>
+              <rect y="13.8" width="60" height="4.6" fill="#fff"/>
+              <rect y="23.1" width="60" height="4.6" fill="#fff"/>
+              <rect y="32.3" width="60" height="4.6" fill="#fff"/>
+              <rect y="41.5" width="60" height="4.6" fill="#fff"/>
+              <rect y="50.8" width="60" height="4.6" fill="#fff"/>
+              <rect width="24" height="32.3" fill="#3C3B6E"/>
+              <g fill="#fff">
+                <circle cx="5" cy="5" r="1.2"/><circle cx="11" cy="5" r="1.2"/><circle cx="17" cy="5" r="1.2"/>
+                <circle cx="8" cy="11" r="1.2"/><circle cx="14" cy="11" r="1.2"/><circle cx="20" cy="11" r="1.2"/>
+                <circle cx="5" cy="17" r="1.2"/><circle cx="11" cy="17" r="1.2"/><circle cx="17" cy="17" r="1.2"/>
+                <circle cx="8" cy="23" r="1.2"/><circle cx="14" cy="23" r="1.2"/><circle cx="20" cy="23" r="1.2"/>
+                <circle cx="5" cy="29" r="1.2"/><circle cx="11" cy="29" r="1.2"/><circle cx="17" cy="29" r="1.2"/>
+              </g>
+            </svg>
+          </span>
+          <span class="flag flag-mx" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <rect width="20" height="60" fill="#006847"/>
+              <rect x="20" width="20" height="60" fill="#fff"/>
+              <rect x="40" width="20" height="60" fill="#CE1126"/>
+              <ellipse cx="30" cy="30" rx="4" ry="3" fill="#8B4513"/>
+            </svg>
+          </span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" class="active" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -46,12 +77,12 @@
     </div>
     <div class="container" style="position: relative; z-index: 2;">
       <div class="breadcrumb">
-        <a href="index.html">Home</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
         <span class="sep">/</span>
-        Services
+        <span data-i18n="srv.breadcrumb">Services</span>
       </div>
-      <h1 class="page-title">Full-Service <span style="color: var(--red); font-style: italic;">Garage</span></h1>
-      <p class="page-subtitle">
+      <h1 class="page-title" data-i18n-html="srv.pageTitle">Full-Service <span style="color: var(--red); font-style: italic;">Garage</span></h1>
+      <p class="page-subtitle" data-i18n="srv.pageSubtitle">
         Tires to transmissions, oil changes to overhauls. We handle the whole car
         — and we handle it fast.
       </p>
@@ -75,24 +106,24 @@
               <line x1="32" y1="24" x2="44" y2="24"/>
             </svg>
           </div>
-          <h3>Tire <span class="accent">Service</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.tire.h">Tire <span class="accent">Service</span></h3>
+          <p data-i18n="srv.tire.p">
             We stock and install every major brand: Michelin, Bridgestone, Goodyear, Pirelli,
             Continental, Yokohama, BFGoodrich, and more. Free balancing with every set of 4.
           </p>
           <ul class="service-features">
-            <li>Road-force balancing for vibration-free rides</li>
-            <li>Free tire rotations for the life of your tires</li>
-            <li>TPMS reset and sensor service included</li>
-            <li>Flat repair and patching while you wait</li>
-            <li>Seasonal storage for your winter/summer sets</li>
+            <li data-i18n="srv.tire.f1">Road-force balancing for vibration-free rides</li>
+            <li data-i18n="srv.tire.f2">Free tire rotations for the life of your tires</li>
+            <li data-i18n="srv.tire.f3">TPMS reset and sensor service included</li>
+            <li data-i18n="srv.tire.f4">Flat repair and patching while you wait</li>
+            <li data-i18n="srv.tire.f5">Seasonal storage for your winter/summer sets</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill"><strong>$25</strong>Mount & Balance</span>
-            <span class="price-pill"><strong>$15</strong>Rotation</span>
-            <span class="price-pill"><strong>$30</strong>Flat Repair</span>
+            <span class="price-pill"><span data-i18n="srv.tire.p1">Mount & Balance</span></span>
+            <span class="price-pill"><span data-i18n="srv.tire.p2">Rotation</span></span>
+            <span class="price-pill"><span data-i18n="srv.tire.p3">Flat Repair</span></span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -132,24 +163,24 @@
               <circle cx="24" cy="24" r="6" fill="currentColor"/>
             </svg>
           </div>
-          <h3>Brake <span class="accent">Service</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.brake.h">Brake <span class="accent">Service</span></h3>
+          <p data-i18n="srv.brake.p">
             Stopping is the most important thing your car does. We use OEM-grade pads and rotors,
             and our techs deliver consistent, controlled braking lap after lap.
           </p>
           <ul class="service-features">
-            <li>Premium ceramic and semi-metallic brake pads</li>
-            <li>Rotor resurfacing or replacement</li>
-            <li>Caliper rebuilds and bleeding</li>
-            <li>Brake fluid flush every 30k miles</li>
-            <li>Parking brake adjustment included</li>
+            <li data-i18n="srv.brake.f1">Premium ceramic and semi-metallic brake pads</li>
+            <li data-i18n="srv.brake.f2">Rotor resurfacing or replacement</li>
+            <li data-i18n="srv.brake.f3">Caliper rebuilds and bleeding</li>
+            <li data-i18n="srv.brake.f4">Brake fluid flush every 30k miles</li>
+            <li data-i18n="srv.brake.f5">Parking brake adjustment included</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill">Full Brake Pad Replace</span>
-            <span class="price-pill">Fluid Flush</span>
-            <span class="price-pill">Inspection</span>
+            <span class="price-pill" data-i18n="srv.brake.p1">Full Brake Pad Replace</span>
+            <span class="price-pill" data-i18n="srv.brake.p2">Fluid Flush</span>
+            <span class="price-pill" data-i18n="srv.brake.p3">Inspection</span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -185,24 +216,24 @@
               <path d="M16 16v24a4 4 0 004 4h8a4 4 0 004-4V16"/>
             </svg>
           </div>
-          <h3>Oil & <span class="accent">Fluids</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.oil.h">Oil & <span class="accent">Fluids</span></h3>
+          <p data-i18n="srv.oil.p">
             Conventional, synthetic blend, full synthetic, high-mileage. We use the spec
             your manufacturer recommends — no upselling, no shortcuts.
           </p>
           <ul class="service-features">
-            <li>Full synthetic oil with 15-point inspection</li>
-            <li>OEM-spec filters every change</li>
-            <li>Coolant flush and refill</li>
-            <li>Transmission fluid service</li>
-            <li>Differential and transfer case fluids</li>
+            <li data-i18n="srv.oil.f1">Full synthetic oil with 15-point inspection</li>
+            <li data-i18n="srv.oil.f2">OEM-spec filters every change</li>
+            <li data-i18n="srv.oil.f3">Coolant flush and refill</li>
+            <li data-i18n="srv.oil.f4">Transmission fluid service</li>
+            <li data-i18n="srv.oil.f5">Differential and transfer case fluids</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill">Conventional</span>
-            <span class="price-pill">Full Synthetic</span>
-            <span class="price-pill">Coolant Flush</span>
+            <span class="price-pill" data-i18n="srv.oil.p1">Conventional</span>
+            <span class="price-pill" data-i18n="srv.oil.p2">Full Synthetic</span>
+            <span class="price-pill" data-i18n="srv.oil.p3">Coolant Flush</span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -254,24 +285,24 @@
               <circle cx="32" cy="38" r="4"/>
             </svg>
           </div>
-          <h3>Wheel <span class="accent">Alignment</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.align.h">Wheel <span class="accent">Alignment</span></h3>
+          <p data-i18n="srv.align.p">
             Bad alignment chews tires, kills fuel economy, and makes your car feel sloppy.
             Our Hunter HawkEye system measures camber, caster, and toe to a thousandth of a degree.
           </p>
           <ul class="service-features">
-            <li>Computerized 4-wheel alignment</li>
-            <li>Suspension component inspection</li>
-            <li>Before/after printouts you can keep</li>
-            <li>Free re-check at 6 months</li>
-            <li>Race-spec alignments available</li>
+            <li data-i18n="srv.align.f1">Computerized 4-wheel alignment</li>
+            <li data-i18n="srv.align.f2">Suspension component inspection</li>
+            <li data-i18n="srv.align.f3">Before/after printouts you can keep</li>
+            <li data-i18n="srv.align.f4">Free re-check at 6 months</li>
+            <li data-i18n="srv.align.f5">Race-spec alignments available</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill">2-Wheel Align</span>
-            <span class="price-pill">4-Wheel Align</span>
-            <span class="price-pill">Race Spec</span>
+            <span class="price-pill" data-i18n="srv.align.p1">2-Wheel Align</span>
+            <span class="price-pill" data-i18n="srv.align.p2">4-Wheel Align</span>
+            <span class="price-pill" data-i18n="srv.align.p3">Race Spec</span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -321,24 +352,24 @@
               <line x1="14" y1="32" x2="26" y2="32"/>
             </svg>
           </div>
-          <h3>Engine <span class="accent">Diagnostics</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.diag.h">Engine <span class="accent">Diagnostics</span></h3>
+          <p data-i18n="srv.diag.p">
             Check engine light on? Weird noise? Loss of power? Our shop runs the same diagnostic
             tools dealerships use — without the dealership prices.
           </p>
           <ul class="service-features">
-            <li>OBD-II and manufacturer-specific scans</li>
-            <li>Live data analysis and freeze-frame capture</li>
-            <li>Misfire, fuel trim, and emissions diagnosis</li>
-            <li>Electrical and wiring troubleshooting</li>
-            <li>Free diagnostics with any related repair</li>
+            <li data-i18n="srv.diag.f1">OBD-II and manufacturer-specific scans</li>
+            <li data-i18n="srv.diag.f2">Live data analysis and freeze-frame capture</li>
+            <li data-i18n="srv.diag.f3">Misfire, fuel trim, and emissions diagnosis</li>
+            <li data-i18n="srv.diag.f4">Electrical and wiring troubleshooting</li>
+            <li data-i18n="srv.diag.f5">Free diagnostics with any related repair</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill">Diagnostic Scan</span>
-            <span class="price-pill">w/ Repair</span>
-            <span class="price-pill">Deep Diagnose</span>
+            <span class="price-pill" data-i18n="srv.diag.p1">Diagnostic Scan</span>
+            <span class="price-pill" data-i18n="srv.diag.p2">w/ Repair</span>
+            <span class="price-pill" data-i18n="srv.diag.p3">Deep Diagnose</span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -389,24 +420,24 @@
               <circle cx="30" cy="36" r="4"/>
             </svg>
           </div>
-          <h3>Suspension & <span class="accent">Steering</span></h3>
-          <p>
+          <h3 data-i18n-html="srv.susp.h">Suspension & <span class="accent">Steering</span></h3>
+          <p data-i18n="srv.susp.p">
             Squeaks, clunks, drift, dive. Whatever's making your car feel old, we'll bring it back
             to the showroom-floor feel — or better, with performance upgrades.
           </p>
           <ul class="service-features">
-            <li>Shocks, struts, and coilover installation</li>
-            <li>Control arms, ball joints, sway bar links</li>
-            <li>Tie rods, rack and pinion, power steering</li>
-            <li>CV joints, axles, drive shaft service</li>
-            <li>Performance suspension upgrades</li>
+            <li data-i18n="srv.susp.f1">Shocks, struts, and coilover installation</li>
+            <li data-i18n="srv.susp.f2">Control arms, ball joints, sway bar links</li>
+            <li data-i18n="srv.susp.f3">Tie rods, rack and pinion, power steering</li>
+            <li data-i18n="srv.susp.f4">CV joints, axles, drive shaft service</li>
+            <li data-i18n="srv.susp.f5">Performance suspension upgrades</li>
           </ul>
           <div class="price-row">
-            <span class="price-pill">>Strut Replace</span>
-            <span class="price-pill">Tie Rod</span>
-            <span class="price-pill">Sway Bar</span>
+            <span class="price-pill" data-i18n="srv.susp.p1">Strut Replace</span>
+            <span class="price-pill" data-i18n="srv.susp.p2">Tie Rod</span>
+            <span class="price-pill" data-i18n="srv.susp.p3">Sway Bar</span>
           </div>
-          <a href="contact.html" class="btn btn-primary">Get a Quote <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-primary"><span data-i18n="srv.quote">Get a Quote</span> <span class="arrow">→</span></a>
         </div>
         <div class="service-img">
           <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -461,11 +492,11 @@
     <div class="container">
       <div class="cta-banner-inner">
         <div class="reveal reveal-left">
-          <h2>Need something <span class="accent">not on this list?</span></h2>
+          <h2 data-i18n-html="srv.cta.title">Need something <span class="accent">not on this list?</span></h2>
         </div>
         <div class="cta-banner-actions reveal reveal-right">
           <a href="contact.html" class="btn btn-primary">
-            Get in Touch <span class="arrow">→</span>
+            <span data-i18n="srv.cta.btn">Get in Touch</span> <span class="arrow">→</span>
           </a>
         </div>
       </div>
@@ -481,47 +512,48 @@
             <span class="logo-mark"></span>
             <span class="logo-text">
               <strong>COMPANY XYZ</strong>
-              <span>Auto & Tire</span>
+              <span data-i18n="nav.tagline">Auto & Tire</span>
             </span>
           </a>
-          <p>Family-owned since 9999.</p>
+          <p data-i18n="footer.family">Family-owned since 9999.</p>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4 data-i18n="footer.services">Services</h4>
           <ul>
-            <li><a href="services.html">Tires</a></li>
-            <li><a href="services.html">Brakes</a></li>
-            <li><a href="services.html">Oil Change</a></li>
-            <li><a href="services.html">Alignment</a></li>
-            <li><a href="services.html">Diagnostics</a></li>
+            <li><a href="services.html" data-i18n="footer.s.tires">Tires</a></li>
+            <li><a href="services.html" data-i18n="footer.s.brakes">Brakes</a></li>
+            <li><a href="services.html" data-i18n="footer.s.oil">Oil Change</a></li>
+            <li><a href="services.html" data-i18n="footer.s.align">Alignment</a></li>
+            <li><a href="services.html" data-i18n="footer.s.diag">Diagnostics</a></li>
           </ul>
         </div>
         <div>
-          <h4>Company</h4>
+          <h4 data-i18n="footer.company">Company</h4>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="about.html">The Team</a></li>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Careers</a></li>
+            <li><a href="about.html" data-i18n="footer.c.about">About Us</a></li>
+            <li><a href="about.html" data-i18n="footer.c.team">The Team</a></li>
+            <li><a href="about.html" data-i18n="footer.c.story">Our Story</a></li>
+            <li><a href="contact.html" data-i18n="footer.c.careers">Careers</a></li>
           </ul>
         </div>
         <div>
-          <h4>Visit Us</h4>
+          <h4 data-i18n="footer.visit">Visit Us</h4>
           <ul>
             <li>1500 Speedway Blvd</li>
             <li>Salinas, CA 93901</li>
             <li><a href="tel:7045550100">(999)999-9999</a></li>
-            <li>Mon-Fri 7a-7p</li>
-            <li>Sat 8a-4p</li>
+            <li data-i18n="footer.hours.mf">Mon-Fri 7a-7p</li>
+            <li data-i18n="footer.hours.sat">Sat 8a-4p</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom" data-i18n="footer.bottom">
         © 2026 COMPANY XYZ — ALL RIGHTS RESERVED — BUILT FOR SPEED
       </div>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

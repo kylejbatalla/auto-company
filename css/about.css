@@ -62,6 +62,8 @@
   color: var(--red);
   line-height: 1;
   margin-bottom: 8px;
+  /* Equal-width digits — prevents reflow during the count-up animation. */
+  font-variant-numeric: tabular-nums;
 }
 
 .stat-label {

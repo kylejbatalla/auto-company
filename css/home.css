@@ -110,6 +110,13 @@
   animation: float-up 0.8s var(--ease-race) forwards 1s;
 }
 
+/* Lock each stat to an equal share so the counter animation
+   (which rapidly rewrites the text) can't reflow the row. */
+.hero-stat {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .hero-stat strong {
   display: block;
   font-family: var(--font-display);
@@ -117,6 +124,8 @@
   font-size: 36px;
   color: var(--white);
   line-height: 1;
+  /* Equal-width digits — stops per-frame width changes during the count-up. */
+  font-variant-numeric: tabular-nums;
 }
 
 .hero-stat span {

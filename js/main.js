@@ -8,12 +8,77 @@
   document.addEventListener('DOMContentLoaded', init);
 
   function init() {
+    setupLanguage();
     setupNavbar();
     setupMobileNav();
     setupScrollReveal();
     setupCounters();
     setupSpeedometer();
     setupForm();
+  }
+
+  /* --- Language switcher (EN <-> ES) --- */
+  function setupLanguage() {
+    const STORAGE_KEY = 'apex_lang';
+    const SUPPORTED = ['en', 'es'];
+    const DEFAULT_LANG = 'en';
+
+    let current = DEFAULT_LANG;
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved && SUPPORTED.indexOf(saved) !== -1) current = saved;
+    } catch (e) { /* localStorage unavailable, fall through */ }
+
+    const applyLanguage = (lang) => {
+      const dict = (window.TRANSLATIONS && window.TRANSLATIONS[lang]) || {};
+
+      // Text content
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] != null) el.textContent = dict[key];
+      });
+
+      // HTML content (allows <br>, <span>, etc.)
+      document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-html');
+        if (dict[key] != null) el.innerHTML = dict[key];
+      });
+
+      // Placeholder attribute
+      document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (dict[key] != null) el.setAttribute('placeholder', dict[key]);
+      });
+
+      // <html lang="">
+      document.documentElement.setAttribute('lang', lang);
+
+      // Update flag button visuals
+      document.querySelectorAll('.lang-toggle').forEach((btn) => {
+        btn.setAttribute('data-lang', lang);
+        const label = lang === 'en' ? 'Switch to Spanish' : 'Cambiar a inglés';
+        btn.setAttribute('aria-label', label);
+        btn.setAttribute('title', label);
+      });
+    };
+
+    const setLang = (lang) => {
+      if (SUPPORTED.indexOf(lang) === -1) return;
+      current = lang;
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+      applyLanguage(lang);
+    };
+
+    // Apply initial language
+    applyLanguage(current);
+
+    // Wire up flag buttons
+    document.querySelectorAll('.lang-toggle').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        setLang(current === 'en' ? 'es' : 'en');
+      });
+    });
   }
 
   /* --- Navbar scroll behavior --- */
