@@ -659,6 +659,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   51%, 100% { opacity: 0.3; }
 }
 
+/* Used by the tire and brake-rotor SVGs across home + services pages. */
+@keyframes tire-spin {
+  to { transform: rotate(360deg); }
+}
+
 /* Scroll reveal */
 .reveal {
   opacity: 0;

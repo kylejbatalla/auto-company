@@ -377,7 +377,18 @@
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { height: 360px; }
   .tire-stage { width: 320px; height: 320px; }
-  .speedo-badge { width: 120px; height: 120px; }
+  /* Drop the speedometer out of absolute positioning so it stops
+     overlapping the hero stats. It now sits in its own row,
+     centered below the copy. */
+  .speedo-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    justify-self: center;
+  }
   .hero-stats { gap: 24px; flex-wrap: wrap; }
   .feature-strip-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid { grid-template-columns: 1fr; }
