@@ -138,6 +138,105 @@
   display: block;
 }
 
+/* --- Google rating + review cards (replaces hero stats) --- */
+.hero-reviews {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  opacity: 0;
+  animation: float-up 0.8s var(--ease-race) forwards 1s;
+}
+
+.rating-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.rating-header .google-g {
+  flex-shrink: 0;
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rating-score {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-score strong {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 30px;
+  color: var(--white);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.rating-score .stars {
+  color: #FFC107;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.rating-meta {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray-light);
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.review-card {
+  background: var(--dark);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 18px;
+  transition: transform 0.3s var(--ease-race), border-color 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  border-color: var(--red);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px -8px var(--red-glow);
+}
+
+.review-card .stars {
+  color: #FFC107;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  color: var(--gray-light);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.review-card .reviewer-name {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
 /* --- Hero visual: animated tire + speedometer --- */
 .hero-visual {
   position: relative;
@@ -377,19 +476,20 @@
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { height: 360px; }
   .tire-stage { width: 320px; height: 320px; }
-  /* Drop the speedometer out of absolute positioning so it stops
-     overlapping the hero stats. It now sits in its own row,
-     centered below the copy. */
+  /* Drop the speedometer out of absolute positioning so it flows
+     naturally between the hero buttons and the review cards. */
   .speedo-badge {
     position: relative;
     bottom: auto;
     right: auto;
     width: 160px;
     height: 160px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     justify-self: center;
   }
   .hero-stats { gap: 24px; flex-wrap: wrap; }
+  .review-cards { grid-template-columns: 1fr; }
+  .rating-header { justify-content: center; }
   .feature-strip-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: clamp(40px, 11vw, 64px); }

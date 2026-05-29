@@ -19,6 +19,13 @@ window.TRANSLATIONS = {
     'hero.stat.years': 'Years on the grid',
     'hero.stat.vehicles': 'Vehicles serviced',
     'hero.stat.return': '% return rate',
+    'hero.rating.meta': 'Based on 287 Google reviews',
+    'hero.review.1.text': '"Best shop in town. Fast service and honest pricing every time."',
+    'hero.review.1.name': '— Maria G.',
+    'hero.review.2.text': '"Got me back on the road same day. These guys know their stuff."',
+    'hero.review.2.name': '— Mike R.',
+    'hero.review.3.text': '"Friendly staff, great prices, top quality work. Highly recommend."',
+    'hero.review.3.name': '— Sarah L.',
 
     /* --- FEATURE STRIP --- */
     'feature.sameday.title': 'SAME-DAY SERVICE',
@@ -229,6 +236,13 @@ window.TRANSLATIONS = {
     'hero.stat.years': 'Años en la pista',
     'hero.stat.vehicles': 'Vehículos atendidos',
     'hero.stat.return': '% de clientes que regresan',
+    'hero.rating.meta': 'Basado en 287 reseñas de Google',
+    'hero.review.1.text': '"El mejor taller del área. Servicio rápido y precios honestos siempre."',
+    'hero.review.1.name': '— María G.',
+    'hero.review.2.text': '"Me regresaron al camino el mismo día. Estos muchachos saben lo que hacen."',
+    'hero.review.2.name': '— Miguel R.',
+    'hero.review.3.text': '"Personal amable, buenos precios y trabajo de calidad. Muy recomendado."',
+    'hero.review.3.name': '— Sara L.',
 
     /* --- FEATURE STRIP --- */
     'feature.sameday.title': 'SERVICIO EL MISMO DÍA',
